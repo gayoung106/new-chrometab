@@ -33,3 +33,5 @@ const setNowTime = (hours, minutes, seconds) => {
 
 getNowDate();
 getNowTime();
+//시간이 1초마다 실행되는 함수
+setInterval(getNowTime, 1000);
