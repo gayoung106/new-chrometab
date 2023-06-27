@@ -2,6 +2,17 @@ const bookmarkBar = document.getElementById("bookmark-bar");
 const bookmarkOpen = document.getElementById("bookmark-open");
 const bookmarkClose = document.getElementById("bookmark-close");
 
+const isBookMarkBarOpen = localStorage.getItem("isBookMarkBarOpen");
+if (isBookMarkBarOpen === "close") {
+  bookmarkBar.style.display = "none";
+  bookmarkOpen.style.display = "none";
+  bookmarkClose.style.display = "flex";
+} else {
+  bookmarkBar.style.display = "block";
+  bookmarkOpen.style.display = "flex";
+  bookmarkClose.style.display = "none";
+}
+
 const bookmarkBarToggle = () => {
   const isBookMarkBarOpen = localStorage.getItem("isBookMarkBarOpen");
   if (isBookMarkBarOpen === "close") {
