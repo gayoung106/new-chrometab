@@ -1,6 +1,5 @@
 (function () {
-  const API_URL =
-    "https://port-0-random-quote-4uvg2mleme84ru.sel3.cloudtype.app/";
+  const API_URL = "https://random-quote.hyobb.com/";
   const quoteElement = document.getElementById("quote");
   const quoteItem = localStorage.getItem("quote");
 
